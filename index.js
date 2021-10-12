@@ -19,29 +19,41 @@ function myMap(thing, callback){
     return newArray;
 }
 function myReduce(thing, callback, acc){
-    const newThing = callBack(thing);
+    let newThing = callBack(thing);
+    if(!acc){
+        acc = newThing[0];
+        newThing = newThing.slice(1);
+    }
     
     for (let i = 0; i <newThing.length; i ++){
-		acc = callback(newThing[i], newThing)
-        //return sum;
+		acc = callback(acc, newThing[i], newThing)
+        
 	}
 	return acc;
     
 }
 function myFind(thing, predicate){
-    const present = (e)=> e===predicate; 
+    //const present = (e)=> e===predicate; 
+    
     const newThing = callBack(thing);
     for(let i = 0; i < newThing.length; i++){
-        if(present(newThing[i])){
+        if(predicate(newThing[i])){
             return newThing[i];
             
         }
-        return undefined;
+        
     }
+    return undefined;
 }
 function myFilter(thing, predicate){
     const newThing = callBack(thing);
-
+    let newValues = [];
+    for(let i = 0; i< newThing.length; i++){
+        if(predicate(newThing[i])){
+            newValues.push(newThing[i])
+        }
+    }
+    return newValues;
 }
 
 function mySize(thing){
@@ -51,20 +63,25 @@ function mySize(thing){
 //ARRAY FUNCTIONS
 
 function myFirst(array, n){
-    let f= array.slice(n);
-    return f;
+    if(!n){
+        return array[0]
+    }else{
+        let f= array.slice(0, n);
+        return f;
+    }
+    
 
 }
 function myLast(array, n){
-    let l= array.slice(-n);
+    if(!n){
+        return array[array.length-1]
+    }else{
+        let l= array.slice(-n);
     return l;
+    }
+    
 }
-function mySortBy(array, callback){
 
-}
-function myFlatten(array,){
-
-}
 //OBJECT FUNCTIONS
 
 function myKeys(object){

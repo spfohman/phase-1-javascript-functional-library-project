@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 17,
+    "passes": 27,
     "pending": 0,
-    "failures": 10,
-    "start": "2021-10-12T13:07:49.288Z",
-    "end": "2021-10-12T13:07:49.831Z",
-    "duration": 543
+    "failures": 0,
+    "start": "2021-10-12T13:55:54.178Z",
+    "end": "2021-10-12T13:55:54.693Z",
+    "duration": 515
   },
   "tests": [
     {
@@ -27,7 +27,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,28 +62,16 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:70:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:75:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
@@ -97,13 +85,7 @@
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:84:28)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -117,25 +99,14 @@
       "fullTitle": "index.js myFind returns the value if found",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:104:53)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:112:39)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
@@ -149,20 +120,14 @@
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:262:12)\n    at Context.<anonymous> (test/indexTest.js:133:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (test/indexTest.js:138:28)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns the size of the collection when an array is passed",
@@ -181,63 +146,35 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [ 1, 2, 3, 4 ] to equal 1",
-        "showDiff": true,
-        "actual": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "expected": 1,
-        "stack": "AssertionError: expected [ 1, 2, 3, 4 ] to equal 1\n    at Context.<anonymous> (test/indexTest.js:159:35)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected false to equal true",
-        "showDiff": true,
-        "actual": "false",
-        "expected": "true",
-        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:163:62)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [ 1, 2, 3, 4 ] to equal 4",
-        "showDiff": true,
-        "actual": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "expected": 4,
-        "stack": "AssertionError: expected [ 1, 2, 3, 4 ] to equal 4\n    at Context.<anonymous> (test/indexTest.js:171:34)\n    at processImmediate (node:internal/timers:464:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -264,141 +201,7 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 40",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "40",
-        "stack": "AssertionError: expected NaN to equal 40\n    at Context.<anonymous> (test/indexTest.js:70:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value when not passed an initial value",
-      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:75:32)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value from object values",
-      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:84:28)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the value if found",
-      "fullTitle": "index.js myFind returns the value if found",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 4",
-        "showDiff": true,
-        "expected": 4,
-        "stack": "AssertionError: expected undefined to equal 4\n    at Context.<anonymous> (test/indexTest.js:104:53)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "does not traverse the whole array if the value is found early",
-      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected { Spy } to have been called 3 times but got 0",
-        "showDiff": true,
-        "actual": "0",
-        "expected": "3",
-        "stack": "AssertionError: expected { Spy } to have been called 3 times but got 0\n    at Context.<anonymous> (test/indexTest.js:112:39)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "correctly filters for values that the callback evaluates as true",
-      "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at arraysEqual (test/indexTest.js:262:12)\n    at Context.<anonymous> (test/indexTest.js:133:14)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    },
-    {
-      "title": "correctly returns an empty array if no matching values are found",
-      "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read property 'length' of undefined\n    at Context.<anonymous> (test/indexTest.js:138:28)\n    at processImmediate (node:internal/timers:464:21)",
-        "message": "Cannot read property 'length' of undefined"
-      }
-    },
-    {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [ 1, 2, 3, 4 ] to equal 1",
-        "showDiff": true,
-        "actual": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "expected": 1,
-        "stack": "AssertionError: expected [ 1, 2, 3, 4 ] to equal 1\n    at Context.<anonymous> (test/indexTest.js:159:35)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected false to equal true",
-        "showDiff": true,
-        "actual": "false",
-        "expected": "true",
-        "stack": "AssertionError: expected false to equal true\n    at Context.<anonymous> (test/indexTest.js:163:62)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    },
-    {
-      "title": "returns the last element of the collection",
-      "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [ 1, 2, 3, 4 ] to equal 4",
-        "showDiff": true,
-        "actual": [
-          1,
-          2,
-          3,
-          4
-        ],
-        "expected": 4,
-        "stack": "AssertionError: expected [ 1, 2, 3, 4 ] to equal 4\n    at Context.<anonymous> (test/indexTest.js:171:34)\n    at processImmediate (node:internal/timers:464:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -417,7 +220,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -450,8 +253,29 @@
       "err": {}
     },
     {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value from object values",
+      "fullTitle": "index.js myReduce returns the correct reduced value from object values",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -464,8 +288,36 @@
       "err": {}
     },
     {
+      "title": "returns the value if found",
+      "fullTitle": "index.js myFind returns the value if found",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js myFind returns undefined if the value is not present",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly filters for values that the callback evaluates as true",
+      "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns an empty array if no matching values are found",
+      "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -485,16 +337,37 @@
       "err": {}
     },
     {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js myLast returns the last element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
